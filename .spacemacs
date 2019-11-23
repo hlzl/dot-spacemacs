@@ -56,7 +56,7 @@ values."
                       auto-completion-tab-key-behavior 'complete
                       auto-completion-complete-with-key-sequence nil
                       auto-completion-complete-with-key-sequence-delay 0.1
-                      auto-completion-private-snippets-directory "~/.spacemacs.d/snippets")
+                      auto-completion-private-snippets-directory "~/Code/dot-spacemacs/snippets")
      (c-c++ :variables
             c-c++-enable-clang-support t
             c-c++-enable-clang-format-on-save t
@@ -343,7 +343,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
 
   (setq-default
-   dotspacemacs-themes '(
+   dotspacemacs-themes '(monokai
                          darkokai
                          zenburn
                          planet)
@@ -394,10 +394,10 @@ you should place your code here."
                                "~/org/home.org"))
 
   ;; reveal.js
-  (setq org-reveal-root (file-truename "~/.spacemacs.d/reveal.js"))
+  (setq org-reveal-root (file-truename "~/Code/dot-spacemacs/reveal.js"))
 
   ;; ycmd
-  (setq ycmd-server-command (list "python3" (file-truename "~/.spacemacs.d/ycmd/ycmd")))
+  (setq ycmd-server-command (list "python3" (file-truename "~/Code/dot-spacemacs/ycmd/ycmd")))
   (setq ycmd-force-semantic-completion t)
   (setq ycmd-startup-timeout 5)
   (setq ycmd-idle-change-delay 2.0)
@@ -483,9 +483,9 @@ you should place your code here."
     )
 
   ;; Personal roslaunch config
-  (load-file "~/.spacemacs.d/private/roslaunch-jump/roslaunch-jump.el")
-  (load-file "~/.spacemacs.d/private/company-roslaunch/company-roslaunch.el")
-  (load-file "~/.spacemacs.d/private/catkin-make/catkin-make.el")
+  (load-file "~/Code/dot-spacemacs/private/roslaunch-jump/roslaunch-jump.el")
+  (load-file "~/Code/dot-spacemacs/private/company-roslaunch/company-roslaunch.el")
+  (load-file "~/Code/dot-spacemacs/private/catkin-make/catkin-make.el")
   (catkin-make-keybinding-setup)
 
   ;; Other settings
