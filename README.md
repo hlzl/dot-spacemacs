@@ -15,23 +15,23 @@ This is the repository of a personal spacemacs config file. It contains a fully 
 ## Requirements
 ### Emacs26
 To install emacs26:
-* ```
+```
 sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt-get update
 sudo apt install emacs26
-* ```
+```
 
 ### Spacemacs
-* ```
+```
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 cd ~/.emacs.d
 git checkout develop
 git checkout 1299f262c
-* ```
+```
 
 ## Installation
 To use this config file:
-* ```
+```
 git clone https://github.com/hlzl/dot-spacemacs.git ~/.spacemacs.d
 
 # Backup your ~/.spacemacs file if it already exits.
@@ -40,30 +40,30 @@ ln -s ~/path/to/dot-spacemacs/.spacemacs ~/.spacemacs -f
 # Setup ycmd
 cd ~/.spacemacs.d
 ./setup.sh
-* ```
+```
 
 ### YCMD
 For cmake projects it is necessary to compile the projects with flag:
-* ```
+```
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-* ```
+```
 
 ## Spacemacs inside terminal
-To use spacemacs inside your terminal, copy the * `emacs.service` file from the `dot-spacemacs/.config` folder to
-* ```bash
+To use spacemacs inside your terminal, copy the `emacs.service` file from the `dot-spacemacs/.config` folder to
+```bash
 ~/.config/systemd/user/emacs.service
-* ```
+```
 Afterwards, run the following
-* ```bash
+```bash
 systemctl enable --user emacs
 systemctl start --user emacs
-* ```
-Finally, add these two lines to your * `.bashrc` in your home directory
-* ```bash
+```
+Finally, add these two lines to your `.bashrc` in your home directory
+```bash
 # Spacemacs inside terminal with proper colors
 alias vi='emacsclient -t'
 export TERM=xterm-256color
-* ```
+```
 
 # Spacemacs Cheatsheet
 For a proper introduction, check out the [documentation](https://www.spacemacs.org/doc/DOCUMENTATION.html).
