@@ -47,6 +47,7 @@ For cmake projects it is necessary to compile the projects with flag:
 ```
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 ```
+<<<<<<< HEAD
 
 ## Spacemacs inside terminal
 To use spacemacs inside your terminal, copy the `emacs.service` file from the `dot-spacemacs/.config` folder to
@@ -130,7 +131,7 @@ For a proper introduction, check out the [documentation](https://www.spacemacs.o
  `V`  visual line mode
  `CTRL v`  block visual mode
 
-#### State  Default Color
+#### State and Default Color
 normal  orange
 > like the normal mode of Vim, used to execute and combine commands
 insert  green
@@ -154,7 +155,7 @@ iedit  red
 iedit-insert  red
 > exclusive to Spacemacs, used to replace multiple regions of text using iedit (more info)
 
-## Key Mappings
+## 4. Key Mappings
 
  `SPC q q`  quit
  `SPC w /`   split window vertically
@@ -201,7 +202,7 @@ iedit-insert  red
  `SPC a r`  ranger
  `SPC a d`  deer
 
-## Unimpaired
+## 5. Unimpaired
 
  `[e`  Move line up
  `]e`  Move line down
@@ -210,7 +211,7 @@ iedit-insert  red
  `[p`  Paste above current line
  `]p`  Paste below current line
 
-## Find/Replace
+## 6. Find/Replace
 Emacs:
  `Alt %`	 query-replace; interactive find/replace
    `y`  do the replacement.
@@ -221,7 +222,7 @@ Emacs:
 Vim:
  `:%s/text/replacement/%g` - replace all instances of text with the replacement
 
-## Magit
+## 7. Magit
  `SPC g s`  Open Magit
  `Enter/Return`  Select
  `TAB`  Open/Close
